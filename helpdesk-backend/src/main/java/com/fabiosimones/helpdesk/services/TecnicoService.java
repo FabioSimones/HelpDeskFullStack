@@ -3,6 +3,7 @@ package com.fabiosimones.helpdesk.services;
 import java.util.List;
 import java.util.Optional;
 
+import com.fabiosimones.helpdesk.domain.dtos.TecnicoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,4 +24,10 @@ public class TecnicoService {
 	public List<Tecnico> findAll() {
 		return tecnicoRepository.findAll();
 	}
+
+    public Tecnico create(TecnicoDTO objDTO) {
+		objDTO.setId(null);
+		Tecnico newObj = new Tecnico(objDTO);
+		return tecnicoRepository.save(newObj);
+    }
 }

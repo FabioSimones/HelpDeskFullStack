@@ -8,6 +8,7 @@ import com.fabiosimones.helpdesk.domain.Pessoa;
 import com.fabiosimones.helpdesk.domain.dtos.TecnicoDTO;
 import com.fabiosimones.helpdesk.repositories.PessoaRepository;
 import com.fabiosimones.helpdesk.services.exceptions.DataIntegrityViolationException;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,6 +39,14 @@ public class TecnicoService {
 		Tecnico newObj = new Tecnico(objDTO);
 		return tecnicoRepository.save(newObj);
     }
+
+	public Tecnico update(Integer id, @Valid TecnicoDTO objDTO) {
+		objDTO.setId(id);
+		Tecnico oldObj = findById(id);
+		validaPorCpfEEmail(objDTO);
+		oldObj = new Tecnico(objDTO);
+		return tecnicoRepository.save(oldObj);
+	}
 
 	private void validaPorCpfEEmail(TecnicoDTO objDTO) {
 		Optional<Pessoa> obj = pessoaRepository.findByCpf(objDTO.getCpf());

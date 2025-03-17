@@ -15,7 +15,7 @@ import jakarta.persistence.OneToMany;
 public class Tecnico extends Pessoa{
 	
 	private static final long serialVersionUID = 1L;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "tecnico")
 	private List<Chamado> chamados = new ArrayList<>();
@@ -29,14 +29,14 @@ public class Tecnico extends Pessoa{
 		super(id, nome, cpf, email, senha);
 		AddPerfil(Perfil.CLIENTE);
 	}
-
+	
 	public Tecnico(TecnicoDTO obj) {
 		super();
 		this.id = obj.getId();
 		this.nome = obj.getNome();
 		this.cpf = obj.getCpf();
 		this.email = obj.getEmail();
-		this.senha = obj.getEmail();
+		this.senha = obj.getSenha();
 		this.perfis = obj.getPerfis().stream().map(x -> x.getCodigo()).collect(Collectors.toSet());
 		this.dataCriacao = obj.getDataCriacao();
 	}

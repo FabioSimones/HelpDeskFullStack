@@ -6,22 +6,37 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.aspectj.lang.annotation.RequiredTypes;
+
 import com.fabiosimones.helpdesk.domain.Tecnico;
 import com.fabiosimones.helpdesk.domain.enums.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class TecnicoDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
+
 	protected Integer id;
-	protected String nome;	
+	@NotBlank
+	@NotNull(message = "O campo NOME é requerido")
+	protected String nome;
+	@NotBlank
+	@NotNull(message = "O campo CPF é requerido")	
 	protected String cpf;
+	@NotBlank
+	@NotNull(message = "O campo EMAIL é requerido")
 	protected String email;
+	@NotBlank
+	@NotNull(message = "O campo SENHA é requerido")
 	protected String senha;
 	protected Set<Integer> perfis = new HashSet<>();
+
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	protected LocalDate dataCriacao = LocalDate.now();
 
-	public TecnicoDTO(){
+	public TecnicoDTO() {
 		super();
 		addPerfil(Perfil.CLIENTE);
 	}
@@ -32,7 +47,7 @@ public class TecnicoDTO implements Serializable{
 		this.nome = obj.getNome();
 		this.cpf = obj.getCpf();
 		this.email = obj.getEmail();
-		this.senha = obj.getEmail();
+		this.senha = obj.getSenha();
 		this.perfis = obj.getPerfis().stream().map(x -> x.getCodigo()).collect(Collectors.toSet());
 		this.dataCriacao = obj.getDataCriacao();
 		addPerfil(Perfil.CLIENTE);

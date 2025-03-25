@@ -4,9 +4,9 @@ import com.fabiosimones.helpdesk.domain.Cliente;
 import com.fabiosimones.helpdesk.domain.Cliente;
 import com.fabiosimones.helpdesk.domain.enums.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;

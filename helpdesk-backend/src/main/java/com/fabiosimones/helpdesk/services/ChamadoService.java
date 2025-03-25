@@ -8,10 +8,10 @@ import com.fabiosimones.helpdesk.domain.enums.Prioridade;
 import com.fabiosimones.helpdesk.domain.enums.Status;
 import com.fabiosimones.helpdesk.repositories.ChamadoRepository;
 import com.fabiosimones.helpdesk.services.exceptions.ObjectNotFoundException;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;

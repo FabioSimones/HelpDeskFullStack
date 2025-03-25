@@ -12,8 +12,9 @@ import com.fabiosimones.helpdesk.domain.Tecnico;
 import com.fabiosimones.helpdesk.domain.enums.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 
 public class TecnicoDTO implements Serializable{
 	private static final long serialVersionUID = 1L;

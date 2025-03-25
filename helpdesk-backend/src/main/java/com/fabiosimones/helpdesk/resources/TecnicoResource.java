@@ -4,8 +4,6 @@ import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import jakarta.validation.Valid;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +12,8 @@ import com.fabiosimones.helpdesk.domain.Tecnico;
 import com.fabiosimones.helpdesk.domain.dtos.TecnicoDTO;
 import com.fabiosimones.helpdesk.services.TecnicoService;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/tecnicos")

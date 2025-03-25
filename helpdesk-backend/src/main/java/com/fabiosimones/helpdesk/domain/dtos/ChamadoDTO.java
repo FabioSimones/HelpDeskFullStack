@@ -2,9 +2,8 @@ package com.fabiosimones.helpdesk.domain.dtos;
 
 import com.fabiosimones.helpdesk.domain.Chamado;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.LocalDate;
 

@@ -8,8 +8,9 @@ import com.fabiosimones.helpdesk.domain.dtos.TecnicoDTO;
 import com.fabiosimones.helpdesk.domain.enums.Perfil;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
 
 @Entity
 public class Tecnico extends Pessoa{

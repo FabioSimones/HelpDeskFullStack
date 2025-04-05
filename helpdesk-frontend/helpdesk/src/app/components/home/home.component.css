@@ -1,8 +1,9 @@
+
 .card{
     width: 90%;
     margin: auto;
     background-color: rgb(235, 235, 235);
-    text-align: center;
+    text-align: justify;
 }
 
 img{

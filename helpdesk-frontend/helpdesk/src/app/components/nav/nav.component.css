@@ -4,7 +4,7 @@
  
  .sidenav {
     width: 13rem;
-    color: white;
+    -webkit-text-fill-color: white;
     background: linear-gradient(219deg, rgba(9,102,121,1) 47%, rgba(0,212,255,1) 98%, rgba(0,36,15,1) 100%);
  }
  
@@ -15,7 +15,7 @@
  }
  
  .sidenav a {
-    color: white;
+   -webkit-text-fill-color: white;
  }
  
  .sidenav i {

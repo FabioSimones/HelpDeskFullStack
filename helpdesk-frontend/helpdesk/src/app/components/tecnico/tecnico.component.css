@@ -3,6 +3,23 @@
     margin: auto;
 }
 
+button{
+    width: 100%;
+    -webkit-text-fill-color: white;
+    margin-bottom: 2rem;
+    background-color: gray;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
 table {
     width: 100%;
+}
+
+h1{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
 }

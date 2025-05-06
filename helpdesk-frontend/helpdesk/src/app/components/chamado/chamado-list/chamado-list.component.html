@@ -9,7 +9,7 @@
        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
     </mat-form-field>
 
-    <mat-radio-group color="primary" aria-label="Selecione a andamento do processo">
+    <mat-radio-group color="primary">
         <mat-radio-button (click)="orderByStatus(0)" value="0">ABERTO</mat-radio-button>
         <mat-radio-button (click)="orderByStatus(1)" value="1">ANDAMENTO</mat-radio-button>
         <mat-radio-button (click)="orderByStatus(2)" value="2">ENCERRADO</mat-radio-button>
@@ -57,7 +57,7 @@
           <ng-container matColumnDef="acoes">
              <th mat-header-cell *matHeaderCellDef> Ações </th>
              <td mat-cell *matCellDef="let element">
-                <a routerLink="">
+                <a routerLink="update/{{element.id}}">
                    <i class="material-icons edit">edit</i>
                 </a>
                 <a routerLink="">

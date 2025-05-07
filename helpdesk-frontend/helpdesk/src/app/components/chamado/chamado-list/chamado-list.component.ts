@@ -12,6 +12,7 @@ import { ChamadoService } from 'src/app/services/chamado.service';
 export class ChamadoListComponent implements OnInit {
   ELEMENT_DATA: Chamado[] = [] 
   FILTERED_DATA: Chamado[] = [];
+
   displayedColumns: string[] = ['id', 'titulo', 'cliente', 'tecnico', 'dataAbertura', 'prioridade', 'status', 'acoes'];  
   dataSource = new MatTableDataSource<Chamado>(this.ELEMENT_DATA);  
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -66,6 +67,5 @@ export class ChamadoListComponent implements OnInit {
     this.FILTERED_DATA = list;
     this.dataSource = new MatTableDataSource<Chamado>(this.FILTERED_DATA);
     this.dataSource.paginator = this.paginator;
-    this.dataSource.filter = status.trim().toLowerCase();
   }
 }

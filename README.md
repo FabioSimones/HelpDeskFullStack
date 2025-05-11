@@ -480,7 +480,7 @@ integridade referencial dos dados.<br>
 
 <h3>7.12 - Listando um Chamado pelo ID</h3>
 
-![image](https://github.com/user-attachments/assets/91de9e3c-6620-4478-9ee5-2867a9932740)
+![image](https://github.com/user-attachments/assets/02a15b91-24a9-480c-8db9-89edbb1b6f80)
 
 <h3>7.13 - Criando um novo Chamado </h3>
 

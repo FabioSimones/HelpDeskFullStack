@@ -405,7 +405,7 @@ integridade referencial dos dados.<br>
   ## 6 - Seed
   <br>
 
-    Tecnico tec1 = new Tecnico(null, "Valdir Cezar", "550.482.150-95", "valdir@mail.com", encoder.encode("123"));
+    		Tecnico tec1 = new Tecnico(null, "Valdir Cezar", "550.482.150-95", "valdir@mail.com", encoder.encode("123"));
 		tec1.AddPerfil(Perfil.ADMIN);
 		Tecnico tec2 = new Tecnico(null, "Richard Stallman", "903.347.070-56", "stallman@mail.com", encoder.encode("123"));
 		Tecnico tec3 = new Tecnico(null, "Claude Elwood Shannon", "271.068.470-54", "shannon@mail.com", encoder.encode("123"));
@@ -428,4 +428,74 @@ integridade referencial dos dados.<br>
 		pessoaRepository.saveAll(Arrays.asList(tec1, tec2, tec3, tec4, tec5, cli1, cli2, cli3, cli4, cli5));
 		chamadoRepository.saveAll(Arrays.asList(c1, c2, c3, c4, c5, c6));
 
-  <br>
+
+## 7 - Tests
+<p>Para realização de testes optei pela utilização do "Postman", onde nele fiz as requisições e testei os métodos 
+	condizentes ao requisitos do projetos. Seguem abaixo algumas imagens dos testes realizados no Postman:</p>
+ <br> 
+
+<h3> 7.1 - Realizando Login no sistema </h3>
+
+![image](https://github.com/user-attachments/assets/fc535376-297c-49f1-8f02-bbc64e4e902c)
+
+<h3>7.2 - Encontrando o Técnico pelo ID</h3>
+
+![image](https://github.com/user-attachments/assets/326d25a6-4c93-4d86-935c-95255b3ffa3f)
+
+<h3>7.3 - Deletando Técnico pelo ID</h3>
+
+![image](https://github.com/user-attachments/assets/660c9872-80ed-45c1-b714-7ad9a7d16fcf)
+
+<h3>7.4 - Listando todos os Técnicos</h3>
+
+![image](https://github.com/user-attachments/assets/7f2ab872-55b5-4615-bfd8-01b836297aee)
+
+<h3>7.5 - Criando um novo Técnico</h3>
+
+![image](https://github.com/user-attachments/assets/7d149664-28d0-4d04-a1ea-708c9a5046c5)
+
+<h3>7.6 - Modificando Técnico</h3>
+
+![image](https://github.com/user-attachments/assets/b83bbce8-41e8-4653-ac17-6056ac6c03ce)
+
+<h3>7.7 - Buscando Cliente pelo ID</h3>
+
+![image](https://github.com/user-attachments/assets/51da8468-0207-4e17-be8e-8b37b5911f94)
+
+<h3>7.8 - Deleção de Cliente</h3>
+
+![image](https://github.com/user-attachments/assets/51a58b04-bb59-49c1-93a9-d5887b4fb3d5)
+
+<h3>7.9 - Listando todos os Clientes </h3>
+
+![image](https://github.com/user-attachments/assets/4244eb80-29e9-4494-a7a1-941ef26bec09)
+
+<h3>7.10 - Criando um novo Cliente </h3>
+
+![image](https://github.com/user-attachments/assets/82311528-9038-453a-aa86-ab0fda5c407d)
+
+<h3>7.11 - Atualizando um Cliente</h3>
+
+![image](https://github.com/user-attachments/assets/1f8b01e8-67ab-4bc1-9ffd-f9d906063ed6)
+
+<h3>7.12 - Listando um Chamado pelo ID</h3>
+
+![image](https://github.com/user-attachments/assets/91de9e3c-6620-4478-9ee5-2867a9932740)
+
+<h3>7.13 - Criando um novo Chamado </h3>
+
+![image](https://github.com/user-attachments/assets/48fb1275-f51b-46e6-a87a-4b8e7adbb33e)
+
+<h3>7.14 - Atualizando um Chamado</h3>
+
+![image](https://github.com/user-attachments/assets/6b7e7ecf-01a4-4b11-830c-aa7acacfb124)
+
+<h3>7.15 - Listando todos os Chamados</h3>
+
+![image](https://github.com/user-attachments/assets/1058763c-8a60-4f17-afa7-8eaa0638abfd)
+
+<h3>7.16 - Exceção de acesso negado</h3>
+
+![image](https://github.com/user-attachments/assets/95e5cece-57d2-4388-aefb-0682a6c5a224)
+
+

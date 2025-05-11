@@ -498,4 +498,7 @@ integridade referencial dos dados.<br>
 
 ![image](https://github.com/user-attachments/assets/95e5cece-57d2-4388-aefb-0682a6c5a224)
 
+<h3>7.17 - Exceção de violação de dados</h3>
+
+![image](https://github.com/user-attachments/assets/d7cd7ba6-0edc-4ba5-a889-ef2bba5ea68b)
 

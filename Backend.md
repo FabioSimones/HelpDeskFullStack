@@ -1,4 +1,4 @@
-## Sistema Helpdesk Fullstack
+## Sistema Helpdesk Backend
 
 --([Fábio Simones](https://github.com/FabioSimones))
 

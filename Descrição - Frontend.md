@@ -79,7 +79,7 @@ seguir a mesma lógica e escrita para esta sessão.</p>
 <p>PAra deletar o cliente será necessário checar se o mesmo não possui chamados abertos no sistema, se não
 a aplicação gerara uma exceção solicitando que o mesmo seja encerrado o chamado criado.</p>
 
-![image](https://github.com/user-attachments/assets/94a19f63-90dc-4b23-b68c-2f09ee0bcd39)
+![image](https://github.com/user-attachments/assets/e4ddac24-691f-4168-9d74-77eb0fc65f29)
 
 ## 1.5 - Chamados
 <p>Seguindo o mesmo padrão de páginas aqui teremos a listagem de chamados, porém por se tratar da parte dos chamados

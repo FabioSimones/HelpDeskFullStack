@@ -58,7 +58,8 @@ listagem no botão para realizar atualização(simbolizado por um lápis) o usu�
 <p>Na tela de deleção, o usuário não poderá alterar campos, só receberá uma ilustração quanto aos dados do técnico 
 que estará deletando.</p>
 
-![image](https://github.com/user-attachments/assets/971db514-984e-4831-a835-b487524ecdc3)
+![image](https://github.com/user-attachments/assets/7f73aee4-f593-4378-ae9f-b15daa200a10)
+
 
 ## 1.4 - Clientes
 <p>Quanto aos clientes teremos páginas bem parecidas quanto aos de técnicos, então para encurtarmos descrições, basta 

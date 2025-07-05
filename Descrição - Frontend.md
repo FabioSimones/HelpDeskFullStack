@@ -9,7 +9,7 @@ de um sistema web para uma microempresa abrir e encerrar suas ordens de serviço
 possui clientes e técnicos, onde o cliente solicita reparo a um determinado equipamento para um técnico, 
 e o técnico consegue atualizar o status da requisição.</p><br>
 
-##Frontend
+## Frontend
 
 <p>Para a construção do frontend utilizaremos o Angular 12, iremos explorar a arquitetura MVC do Angular,
 os componentes visuais do Angular Material, Angular reactive forms, navegação.</p>
